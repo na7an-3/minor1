@@ -1,0 +1,124 @@
+/* About Us - Title */
+.about-title {
+  padding: 60px 20px 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+.about-title h1 {
+  font-size: 42px;
+  color: #222;
+  margin: 0;
+}
+/* About Us - Intro Section */
+.about-intro {
+  padding: 50px;
+  background-color: #f2f2f2;
+}
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  align-items: center;
+}
+.about-image {
+  flex: 1 1 40%;
+}
+.about-image img {
+  width: 100%;
+  border-radius: 8px;
+}
+.about-text {
+  flex: 1 1 50%;
+}
+.about-text h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+.about-text p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+/* Our Story Section */
+.our-story {
+  padding: 50px;
+  background-color: #ffffff;
+}
+.story-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
+.story-text {
+  flex: 1 1 50%;
+}
+.story-text h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+.story-text p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+.story-image {
+  flex: 1 1 40%;
+}
+.story-image img {
+  width: 100%;
+  border-radius: 8px;
+}
+/* Mission & Core Values */
+.mission-values {
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.mission-values h2, .mission-values h3 {
+  text-align: center;
+}
+.mission-values ul.core-values {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+.core-values li {
+  margin-bottom: 20px;
+}
+.core-values strong {
+  display: block;
+  font-size: 1.1em;
+  color: #222;
+  margin-bottom: 5px;
+}
+.core-values span {
+  color: #555;
+  font-size: 0.95em;
+  display: block;
+  line-height: 1.5;
+}
+/* Call to Action */
+.about-cta {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: rgb(237, 237, 234);
+}
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .about-container,
+  .story-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-image, .about-text, .story-text, .story-image {
+    flex: 1 1 100%;
+  }
+  .mission-values {
+    text-align: center;
+    padding: 40px 15px;
+  }
+  .mission-values ul.core-values {
+    text-align: left;
+  }
+}
