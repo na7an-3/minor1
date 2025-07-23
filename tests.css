@@ -241,8 +241,72 @@
   transition: border-color 0.3s ease;
 }
 
+.Cform{
+  background-color: white;
+  width: 500px;
+  padding:25px;
+  margin: 50px auto 0;
+  border-top: 5px solid #f77062;
+  border-bottom: 8px solid #f77062;
+  box-shadow:0 0 7px 5px rgba(0, 0, 0, 0.6);
+}
+
+.Cform h2{
+  font-size: 20px;
+  line-height: 24px;
+  padding:30px;
+  text-align: center;
+}
+.input-name{
+width:90%;
+position:relative;
+margin: 20px auto;
+}
+.name{
+  width:45%;
+  padding:8px 0 8px 40px;
+}
+.input-name span{
+  margin-left: 35px;
+}
+.email{
+  width:100%;
+  padding:8px 0 8px 40px;
+}
+.password1{
+  width:100%;
+  padding:8px 0 8px 40px;
+}
+.password2{
+   width:100%;
+  padding:8px 0 8px 40px;
+}
+.btn1 {
+      background-color: #17aeae;
+      border: none;
+      padding: 12px 30px;
+      color: white;
+      font-size: 1.2rem;
+      cursor: pointer;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+    }
+ .error-message {
+      color: red;
+      font-size: 0.85rem;
+      margin-top: 5px;
+      display: block;
+      min-height: 18px; /* reserve space */
+      font-family: Arial, sans-serif;
+      font-weight: 600;
+    }
+    input.error {
+      border: 2px solid red;
+    }
+
 /* responsive */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .navmenu {
     position: absolute;
     top: 80px;
@@ -289,8 +353,42 @@
     align-items: center;
     text-align: center;
   }
-
   .contact-text, .contact-form {
     max-width: 100%;
+  }
+   .Cform {
+    width: 90%;
+    padding: 15px;
+    margin: 20px auto;
+  }
+  .Cform h2 {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 20px 10px;
+  }
+  .input-name {
+    width: 100%;
+    margin: 15px auto;
+    display: block;
+  }
+  .name {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+  }
+  .email, .password1, .password2 {
+    width: 100%;
+    padding: 8px 10px;
+  }
+  .btn1 {
+    width: 50%;
+    padding: 12px 0;
+    font-size: 1rem;
+  }
+  .input-name span {
+    margin-left: 0;
+    display: block;
+    text-align: left;
+    margin-top: 5px;
   }
 }
