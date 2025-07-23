@@ -306,7 +306,7 @@ margin: 20px auto;
     }
 
 /* responsive */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .navmenu {
     position: absolute;
     top: 80px;

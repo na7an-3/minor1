@@ -104,6 +104,47 @@
   padding: 60px 20px;
   background-color: rgb(237, 237, 234);
 }
+
+.team-slider {
+  padding: 50px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.slider-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.slide-track {
+  display: flex;
+  gap: 30px;
+  animation: scroll 20s linear infinite;
+}
+
+.slide {
+  min-width: 200px;
+  background: white;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.slide img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.slide p {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
 /* Responsive for mobile */
 @media (max-width: 768px) {
   .about-container,
@@ -120,5 +161,21 @@
   }
   .mission-values ul.core-values {
     text-align: left;
+  }
+  .team-slider {
+    padding: 30px 10px;
+  }
+  
+  .slide {
+    min-width: 150px;  /* smaller slides */
+    padding: 10px;
+  }
+  
+  .slide p {
+    font-size: 0.85rem;
+  }
+  
+  .slide-track {
+    gap: 15px;
   }
 }
