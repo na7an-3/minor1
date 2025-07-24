@@ -46,34 +46,6 @@
       </form>
       </div>
       </div>
-      <script>
-        document.addEventListener('DOMContentLoaded', function () {
-  const loginForm = document.getElementById('loginForm'); 
-  const emailInput = document.getElementById('lemail');
-  const passwordInput = document.getElementById('lpassword1');
-
-  loginForm.addEventListener('submit', function (e) {
-    e.preventDefault();
-
-    const storedUser = localStorage.getItem('user');
-
-    if (!storedUser) {
-      alert('No registered user found. Please sign up first.');
-      return;
-    }
-
-    const user = JSON.parse(storedUser);
-
-    if (emailInput.value.trim() !== user.email || passwordInput.value !== user.password) {
-      alert('Invalid email or password.');
-      return;
-    }
-
-    alert('Login successful!');
-    window.location.href = 'index.html';
-  });
-});
-      </script>
 <script src="login.js"></script>
 <script src="test.js"></script>
 </body>
