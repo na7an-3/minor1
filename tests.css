@@ -292,19 +292,17 @@ margin: 20px auto;
       transition: background-color 0.3s ease;
       text-decoration: none;
     }
- .error-message {
-      color: red;
-      font-size: 0.85rem;
-      margin-top: 5px;
-      display: block;
-      min-height: 18px; /* reserve space */
-      font-family: Arial, sans-serif;
-      font-weight: 600;
+    .btn2{
+      background-color: #17aeae;
+      border: none;
+      padding: 12px 30px;
+      color: white;
+      font-size: 1.2rem;
+      cursor: pointer;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
     }
-    input.error {
-      border: 2px solid red;
-    }
-
 /* responsive */
 @media (max-width: 768px) {
   .navmenu {

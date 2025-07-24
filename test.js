@@ -14,3 +14,4 @@ document.querySelector('.contact-form').addEventListener('submit', function(e) {
 
   this.reset(); // Clear the form fields
 });
+

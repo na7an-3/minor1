@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Real</title>
+  <link rel="icon" href="img/logo.jpg">
+  <link rel="stylesheet" href="tests.css" />
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container">
+    <a href="/" id="logo">REAL</a>
+
+    <div id="menu">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+
+    <ul class="navmenu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About US</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html" class="btn">Sign up</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="Cform">
+  <h2>log in</h2>
+  <div class="form-container">
+    <form id="loginForm">
+        <div class="input-name">
+    <input type="email" id="lemail" placeholder="Email" class="email" required>
+      </div> 
+      <div class="input-name">
+        <input type="password" id="lpassword1" placeholder="Password" class="password1" required>
+      </div> 
+      <div class="input-name">
+        <input type="submit" class="btn2" value="Login">
+      </div> 
+      <div class="input-name">
+        <p>Don't have an account? <a href="login.html">signup</a></p></div>
+      </form>
+      </div>
+      </div>
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+  const loginForm = document.getElementById('loginForm'); 
+  const emailInput = document.getElementById('lemail');
+  const passwordInput = document.getElementById('lpassword1');
+
+  loginForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const storedUser = localStorage.getItem('user');
+
+    if (!storedUser) {
+      alert('No registered user found. Please sign up first.');
+      return;
+    }
+
+    const user = JSON.parse(storedUser);
+
+    if (emailInput.value.trim() !== user.email || passwordInput.value !== user.password) {
+      alert('Invalid email or password.');
+      return;
+    }
+
+    alert('Login successful!');
+    window.location.href = 'index.html';
+  });
+});
+      </script>
+<script src="login.js"></script>
+<script src="test.js"></script>
+</body>
+</html>
