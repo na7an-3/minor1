@@ -65,6 +65,7 @@
   text-align: center;
   padding: 60px 20px;
   background-color: #f1f1f1;
+   flex: 1;
 }
 
 .gallery-section h2 {
