@@ -183,10 +183,6 @@
   text-decoration: none;
 }
 
-.detail-item a:hover {
-  text-decoration: underline;
-}
-
 /* Contact Section */
 .contact-section {
   max-width: 900px;

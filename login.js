@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // ====== SIGNUP FORM VALIDATION ======
   const signupForm = document.getElementById('signupForm');
   if (signupForm) {
     const email = signupForm.querySelector('#email');
@@ -39,7 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ====== LOGIN FORM VALIDATION ======
   const loginForm = document.getElementById('loginForm');
   if (loginForm) {
     const emailInput = loginForm.querySelector('#lemail');
